@@ -58,7 +58,7 @@ Two more queries are made for the Measurement table, both collect all the temper
 ## Discussion of June and December Temperatures
 The summaries of the temperatures for the months of June and December in the database are tabulated as follows:
 
-![Summaries of June and December Temps](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/Jun_Dec_Temps.png)
+![Summaries of June and December Temps](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/Jun_Dec_Temps.png)
 
 - The average temperature is about 74.94 &deg;F for June and about 71.04 &deg;F for December. Surprisingly, the temperature is only slightly cooler for December than for June but still above 70 &deg;F.
 
@@ -71,17 +71,17 @@ The summaries of the temperatures for the months of June and December in the dat
 ## Summary
 The temperature data are charted in box-and-whisker plots for easier visualization. The plots show that most of the observed temperatures (non-outliers) for both months are between 67 &deg;F and 80 &deg;F in general.
 
-![Temperature Box-and-Whiskers](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/BoxPlots.png)
+![Temperature Box-and-Whiskers](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/BoxPlots.png)
 
 The temperatures appear relatively consistent, so the conditions seem ideal for opening a surfing and ice cream business. Further analysis can help answer any possible questions. Before doing so, a re-examination of all nine stations used to log the weather reveals something interesting: Two of them (USC00518838 and USC00516128) are not located anywhere near a beach, which could be confirmed by the elevation being in the triple digits (implying that these stations may be sitting on a mountainside). If any additional queries are to be carried out for this business, it might be helpful to exclude these two to obtain a more coast-centric weather analysis. For convenience of reference, the queries and additional action scripts used have been appended after the end of the Module Challenge Notebook file.
 
 1. One additional query gathers the minimum, average, and maximum temperature over time grouped by year and month. The query filter excludes the two stations on the mountain. The results are placed into a Pandas DataFrame, which can then be exported into a CSV file or be plotted and manipulated as desired. As examples, some box plots are drawn up:
 
-![Temperature Statistics](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/TempStats.png)
+![Temperature Statistics](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/TempStats.png)
 
-![Average Precipitation](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/AvgPrcp.png)
+![Average Precipitation](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/AvgPrcp.png)
 
-![Maximum Precipitation](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/MaxPrcp.png)
+![Maximum Precipitation](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/MaxPrcp.png)
 
 It appears that about 75% of the monthly minimum temperatures are above 60 &deg;F from looking at the first quartile line, and the minimum monthly average temperature lines up with the third quartile of the monthly minimum temperatures. No outliers are observed among the monthly temperature data.
 
@@ -91,9 +91,9 @@ Based on temperature and precipitation in the whole database, the conditions lik
 
 2. Another additional query aggregates the average temperature and precipitation for each coastal station by month (excluding the two mountain stations). The results are placed into a Pandas DataFrame to allow export into a CSV file or any desired future work. A pair of line charts are drawn up as an example of tracking the monthy average temperature and precipitation for each coastal station:
 
-![Monthly Average Temp by Station](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/StationTemp.png)
+![Monthly Average Temp by Station](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/StationTemp.png)
 
-![Monthly Average Prcp by Station](http://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/StationPrcp.png)
+![Monthly Average Prcp by Station](https://github.com/Owen-Wang1234/surfs_up/blob/main/Figures/StationPrcp.png)
 
 As shown, the winter and early spring range (January, February, March, and December) may not be ideal based on average temperature, but the average precipitation lines can only point out that two stations report the highest precipitation averages almost consistently: USC00519281 and USC00513117. One interesting observation is that the average temperature curves show a noticible split between two groups; one group always have higher average temperatures than the other group from April to October. It would appear that there are four areas that may be ideal:
 
